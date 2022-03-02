@@ -8,9 +8,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v1 # 固定写法
+      - uses: actions/checkout@v2 # 固定写法
       # 第三方Action，它可以在服务器配置Flutter的环境
-      - uses: subosito/flutter-action@v1
+      - uses: subosito/flutter-action@v12
         with:
           # 这里的version和channel要跟Flutter工程师电脑上的Flutter环境保持一致（通过flutter doctor指令可以查看具体信息  ）
           flutter-version: ‘2.8.1’
